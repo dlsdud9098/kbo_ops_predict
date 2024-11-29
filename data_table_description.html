@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            font-size: small;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Column Name</th>
+            <th>Pre/Regular_Season_Batter</th>
+            <th>Regular_Season_Batter_Day_by_Day</th>
+            <th>Submission</th>
+        </tr>
+        <tr>
+            <td>batter_id</td>
+            <td>타자 고유 ID</td>
+            <td>타자 ID</td>
+            <td>선수 고유 ID</td>
+        </tr>
+        <tr>
+            <td>batter_name</td>
+            <td>타자 이름</td>
+            <td>타자 이름</td>
+            <td>선수 이름</td>
+        </tr>
+        <tr>
+            <td>year</td>
+            <td>년도</td>
+            <td>년도</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>team</td>
+            <td>소속 팀</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>avg</td>
+            <td>타율</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>avg1</td>
+            <td></td>
+            <td>해당 경기 타율</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>avg2</td>
+            <td></td>
+            <td>시즌 누적 타율</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>경기</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>AB</td>
+            <td>타수</td>
+            <td>타수</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>R</td>
+            <td>득점</td>
+            <td>득점</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>안타</td>
+            <td>안타</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2B</td>
+            <td>2루타</td>
+            <td>2루타</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3B</td>
+            <td>3루타</td>
+            <td>3루타</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HR</td>
+            <td>홈런</td>
+            <td>홈런</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TB</td>
+            <td>루타</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>RBI</td>
+            <td>타점</td>
+            <td>타점</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>SB</td>
+            <td>도루 성공</td>
+            <td>도루 성공</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CS</td>
+            <td>도루 실패</td>
+            <td>도루 실패</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BB</td>
+            <td>볼넷</td>
+            <td>볼넷</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HBP</td>
+            <td>사구</td>
+            <td>사구</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>SO</td>
+            <td>삼진</td>
+            <td>삼진</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>GDP</td>
+            <td>병살</td>
+            <td>병살</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>SLG</td>
+            <td>장타율</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>OBP</td>
+            <td>출루율</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>실책</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>height/weight</td>
+            <td>선수 키/몸무게</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>year_born</td>
+            <td>생년월일</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>position</td>
+            <td>수비 위치</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>career</td>
+            <td>커리어</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>starting_salary</td>
+            <td>입단 연봉</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>OPS</td>
+            <td>(OBP+SLG)</td>
+            <td></td>
+            <td>예측 OPS</td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td></td>
+            <td>날짜</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>opposing_team</td>
+            <td></td>
+            <td>상대 팀</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
